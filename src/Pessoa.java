@@ -1,10 +1,11 @@
 
 public class Pessoa {
 
-    String nome;
-    int idade;
+    double peso;
     double altura;
-    String CPF;
     
+    double calcularIMC(){
+        return peso / (altura * altura);
+    }    
     
 }
