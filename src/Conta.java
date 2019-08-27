@@ -25,6 +25,23 @@ public class Conta {
         
     }
     
+    boolean tranferir(double valor, Conta destino){
+        
+        //Se conseguir sacar o valor desta conta
+        if(this.sacar(valor)){
+            //deposite o valor na conta de destino
+            destino.depositar(valor);
+            return true;
+        }
+        
+        return false;
+        
+    }
+    
+    
+    
+    
+    
     
     
 }

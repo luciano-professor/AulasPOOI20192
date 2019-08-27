@@ -4,21 +4,25 @@ public class TestaConta {
     public static void main(String[] args){
         
         Conta conta1 = new Conta();
-        
         conta1.saldo = 2500;
         conta1.numero = "007";
         conta1.agencia = "9";
         conta1.titular = "Matheus";
         
-        conta1.depositar(5000);
+        Conta conta2 = new Conta();
+        conta2.saldo = 100;
+        conta2.titular = "Luciano";
+        conta2.agencia = "9";
+        conta2.numero = "777";
         
-        if(conta1.sacar(15000)){
-            System.out.println("Saque com sucesso!");
-        }else{
-            System.out.println("Saque não realizado");
+        if(conta1.tranferir(1000, conta2)){
+            System.out.println("Tranferiu!");
+        }
+        else{
+            System.out.println("Deu errado!");
         }
         
-        System.out.println("Saldo: " + conta1.saldo);
+        
         
         
     }
