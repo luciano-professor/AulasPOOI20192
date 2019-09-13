@@ -3,18 +3,48 @@ public class Conta {
     
     //Atributos
     
-    double saldo;
-    String agencia;
-    String numero;
-    Cliente titular;
+    private double saldo;
+    private String agencia;
+    private String numero;
+    private Cliente titular;
+    
+    public double getSaldo(){
+        return this.saldo;
+    }
+    
+    public String getAgencia(){
+        return this.agencia;
+    }
+    
+    public String getNumero(){
+        return this.numero;
+    }
+    
+    public Cliente getTitular(){
+        return this.titular;
+    }
+    
+    public void setAgencia(String a){
+        this.agencia = a;
+    }
+    
+    public void setNumero(String n){
+        this.numero = n;
+    }
+    
+    public void setTitular(Cliente c){
+        this.titular = c;
+    }
+    
+    
     
     //Metodos
     
-    void depositar(double valor){
+    public void depositar(double valor){
         this.saldo += valor;
     }
     
-    boolean sacar(double valor){
+    public boolean sacar(double valor){
         
         if(this.saldo >= valor){
             this.saldo -= valor;
@@ -25,7 +55,7 @@ public class Conta {
         
     }
     
-    boolean tranferir(double valor, Conta destino){
+    public boolean tranferir(double valor, Conta destino){
         
         //Se conseguir sacar o valor desta conta
         if(this.sacar(valor)){
