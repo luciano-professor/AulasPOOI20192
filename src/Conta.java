@@ -8,6 +8,13 @@ public class Conta {
     private String numero;
     private Cliente titular;
     
+    public Conta(double s, String a, String n, Cliente t){
+        this.depositar(s);
+        this.setAgencia(a);
+        this.setNumero(n);
+        this.setTitular(t);
+    }
+    
     public double getSaldo(){
         return this.saldo;
     }

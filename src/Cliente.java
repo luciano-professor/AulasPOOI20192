@@ -2,6 +2,11 @@ public class Cliente {
 
     private String nome;
     private String cpf;
+    
+    public Cliente(String n, String c){
+        this.setNome(n);
+        this.setCpf(c);
+    }
 
     public String getNome() {
         return this.nome;
