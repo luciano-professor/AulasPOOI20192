@@ -2,12 +2,12 @@
 public class Conta {
     
     //Atributos
-    
     private double saldo;
     private String agencia;
     private String numero;
     private Cliente titular;
     
+    //Construtor
     public Conta(double s, String a, String n, Cliente t){
         this.depositar(s);
         this.setAgencia(a);
@@ -15,6 +15,7 @@ public class Conta {
         this.setTitular(t);
     }
     
+    //Getters e Setters
     public double getSaldo(){
         return this.saldo;
     }

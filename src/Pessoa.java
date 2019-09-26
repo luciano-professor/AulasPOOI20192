@@ -1,11 +1,5 @@
-
-public class Pessoa {
-
-    double peso;
-    double altura;
+public class Pessoa {   
     
-    double calcularIMC(){
-        return peso / (altura * altura);
-    }    
+    private String nome;
     
 }
