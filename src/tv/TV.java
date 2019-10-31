@@ -1,3 +1,5 @@
+package tv;
+
 public class TV {
     
     private int canal;

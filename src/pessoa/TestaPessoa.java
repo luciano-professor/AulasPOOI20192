@@ -1,3 +1,8 @@
+package pessoa;
+
+
+import pessoa.Pessoa;
+
 public class TestaPessoa {
     
     public static void main(String[] args){

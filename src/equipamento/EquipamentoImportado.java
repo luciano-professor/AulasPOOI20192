@@ -1,3 +1,5 @@
+package equipamento;
+
 public class EquipamentoImportado extends Equipamento {
     
     private double percentualimposto;

@@ -1,3 +1,5 @@
+package equipamento;
+
 
 public class TestaEquipamento {
 

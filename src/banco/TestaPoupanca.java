@@ -1,3 +1,7 @@
+package banco;
+
+import cliente.Cliente;
+
 public class TestaPoupanca {
 
     public static void main(String[] args) {

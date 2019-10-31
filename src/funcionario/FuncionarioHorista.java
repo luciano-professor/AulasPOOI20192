@@ -1,3 +1,5 @@
+package funcionario;
+
 public class FuncionarioHorista extends Funcionario {
     
     private double valorHora;

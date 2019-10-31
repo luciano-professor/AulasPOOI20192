@@ -1,3 +1,5 @@
+package funcionario;
+
 public class FuncionarioCLT extends Funcionario {
     
     private double salario;

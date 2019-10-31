@@ -1,3 +1,7 @@
+package banco;
+
+import cliente.Cliente;
+
 public class Poupanca extends Conta {
        
     public Poupanca(double s, String a, String n, Cliente t){
