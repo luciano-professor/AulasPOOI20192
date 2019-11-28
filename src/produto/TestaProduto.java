@@ -6,7 +6,7 @@ public class TestaProduto {
         
         try{
         
-            Produto x1 = new Produto(-5);
+            Produto x1 = new Produto(500, "");
             
         }catch(ParametroInvalidoException ex){
             //Fazer algum tratamento de exceção

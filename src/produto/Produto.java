@@ -3,9 +3,11 @@ package produto;
 public class Produto {
 
     private double preco;
+    private String nome;
     
-    public Produto(double p) throws ParametroInvalidoException{
+    public Produto(double p, String n) throws ParametroInvalidoException{
         this.setPreco(p);
+        this.setNome(n);
     }
 
     public double getPreco() {
@@ -26,6 +28,22 @@ public class Produto {
         }
         
         this.preco = preco;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String n) 
+            throws ParametroInvalidoException {
+        
+        //Verificar se a String de nome é vazia
+        if(n.isEmpty()){
+            throw new ParametroInvalidoException("Nome vazio.");
+        }
+        
+        this.nome = n;
+        
     }
     
     
